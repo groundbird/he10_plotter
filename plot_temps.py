@@ -18,7 +18,7 @@ def format_he10_data(fname):
 def plot_he10_data(ax, dates, temps):
     lines = ['-', '--', '-.']
     linecycler = it.cycle(lines)
-    label = ['He3U Head', 'He3I Head', 'He4 Head']
+    label = ['He3U head', 'He3I head', 'He4 head']
     labelcycler = it.cycle(label)
     for temp in temps:
-        ax.plot(dates, temp, next(linecycler), label=next(labelcycler))
+        ax.plot(dates, temp, next(linecycler), label=next(labelcycler), lw=2)
