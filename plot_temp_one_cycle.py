@@ -14,7 +14,7 @@ def main():
     else: f = sys.argv[1]
     dates, temps = plot_temps.format_he10_data(f)
     # plot
-    fig = plt.figure()
+    fig = plt.figure(figsize=(8, 5))
     ax = plt.subplot(111)
     plot_temps.plot_he10_data(ax, dates, temps)
     # range
